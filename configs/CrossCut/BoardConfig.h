@@ -9,7 +9,7 @@
 #include "enums.pb.h"
 #include "class/hid/hid.h"
 
-#define BOARD_CONFIG_LABEL "Rana Tadpole"
+#define BOARD_CONFIG_LABEL "CrossCut"
 
 // Main pin mapping Configuration
 //                          // GP2040 | Xinput | Switch  | PS3/4/5  | Dinput | Arcade |
@@ -25,13 +25,22 @@
 #define GPIO_PIN_22 GpioAction::BUTTON_PRESS_B4    // B4     | Y      | X       | Triangle | 4      | P2     |
 #define GPIO_PIN_20 GpioAction::BUTTON_PRESS_R1    // R1     | RB     | R       | R1       | 6      | P3     |
 #define GPIO_PIN_18 GpioAction::BUTTON_PRESS_L1    // L1     | LB     | L       | L1       | 5      | P4     |
-#define GPIO_PIN_07 GpioAction::BUTTON_PRESS_S1    // S1     | Back   | Minus   | Select   | 9      | Coin   |
+#define GPIO_PIN_13 GpioAction::BUTTON_PRESS_S1    // S1     | Back   | Minus   | Select   | 9      | Coin   |
 #define GPIO_PIN_00 GpioAction::BUTTON_PRESS_S2    // S2     | Start  | Plus    | Start    | 10     | Start  |
-#define GPIO_PIN_15 GpioAction::BUTTON_PRESS_L3    // L3     | LS     | LS      | L3       | 11     | LS     |
-#define GPIO_PIN_16 GpioAction::BUTTON_PRESS_R3    // R3     | RS     | RS      | R3       | 12     | RS     |
-#define GPIO_PIN_13 GpioAction::BUTTON_PRESS_A1    // A1     | Guide  | Home    | PS       | 13     | ~      |
+#define GPIO_PIN_14 GpioAction::BUTTON_PRESS_L3    // L3     | LS     | LS      | L3       | 11     | LS     |
+#define GPIO_PIN_12 GpioAction::BUTTON_PRESS_R3    // R3     | RS     | RS      | R3       | 12     | RS     |
+#define GPIO_PIN_15 GpioAction::BUTTON_PRESS_A1    // A1     | Guide  | Home    | PS       | 13     | ~      |
 #define GPIO_PIN_12 GpioAction::BUTTON_PRESS_A2    // A2     | ~      | Capture | ~        | 14     | ~      |
-#define GPIO_PIN_14 GpioAction::BUTTON_PRESS_FN    // Hotkey Function                                        |
+#define GPIO_PIN_07 GpioAction::BUTTON_PRESS_FN    // Hotkey Function                                        |
+
+// Setting GPIO pins to assigned by add-on
+//
+#define GPIO_PIN_00 GpioAction::ASSIGNED_TO_ADDON
+#define GPIO_PIN_01 GpioAction::ASSIGNED_TO_ADDON
+#define GPIO_PIN_08 GpioAction::ASSIGNED_TO_ADDON
+#define GPIO_PIN_21 GpioAction::ASSIGNED_TO_ADDON
+#define GPIO_PIN_28 GpioAction::ASSIGNED_TO_ADDON
+#define GPIO_PIN_29 GpioAction::ASSIGNED_TO_ADDON
 
 // Keyboard Mapping Configuration
 //                                            // GP2040 | Xinput | Switch  | PS3/4/5  | Dinput | Arcade |
@@ -55,6 +64,70 @@
 #define KEY_BUTTON_A2 HID_KEY_F2           // A2     | ~      | Capture | ~        | 14     | ~      |
 #define KEY_BUTTON_FN -1                   // Hotkey Function                                        |
 
-#define GPIO_PIN_05 GpioAction::BUTTON_PRESS_L3
+#define TURBO_ENABLED 1
+#define GPIO_PIN_27 GpioAction::BUTTON_PRESS_TURBO
+
+#define GPIO_PIN_25 GpioAction::SUSTAIN_DP_MODE_LS
+#define GPIO_PIN_24 GpioAction::SUSTAIN_DP_MODE_RS
+
+#define SLIDER_SOCD_ENABLED 1
+#define GPIO_PIN_23 GpioAction::SUSTAIN_SOCD_MODE_UP_PRIO
+#define GPIO_PIN_22 GpioAction::SUSTAIN_SOCD_MODE_SECOND_WIN
+#define SLIDER_SOCD_SLOT_DEFAULT SOCD_MODE_NEUTRAL
+
+#define USB_PERIPHERAL_ENABLED 1
+#define USB_PERIPHERAL_PIN_DPLUS 10
+
+#define DEFAULT_INPUT_MODE INPUT_MODE_PS5
+#define DEFAULT_INPUT_MODE_R1 INPUT_MODE_XBONE
+#define DEFAULT_INPUT_MODE_B4 INPUT_MODE_PS5
+#define DEFAULT_PS5AUTHENTICATION_TYPE INPUT_MODE_AUTH_TYPE_USB
+
+#define BOARD_LEDS_PIN 8
+
+#define LED_BRIGHTNESS_MAXIMUM 50
+#define LEDS_PER_PIXEL 2
+
+#define LEDS_DPAD_LEFT 0
+#define LEDS_DPAD_DOWN 1
+#define LEDS_DPAD_RIGHT 2
+#define LEDS_BUTTON_B3 3
+#define LEDS_BUTTON_B4 4
+#define LEDS_BUTTON_R1 5
+#define LEDS_BUTTON_L1 6
+#define LEDS_BUTTON_L2 7
+#define LEDS_BUTTON_R2 8
+#define LEDS_BUTTON_B2 9
+#define LEDS_BUTTON_B1 10
+#define LEDS_DPAD_UP 11
+
+#define PLED_TYPE PLED_TYPE_RGB
+#define PLED1_PIN 24
+#define PLED2_PIN 25
+#define PLED3_PIN 26
+#define PLED4_PIN 27
+#define PLED_COLOR ColorGreen
+
+#define HAS_I2C_DISPLAY 1
+#define I2C1_ENABLED 1
+#define I2C1_PIN_SDA 8
+#define I2C1_PIN_SCL 9
+#define DISPLAY_I2C_BLOCK i2c1
+#define DISPLAY_FLIP 1
+
+#define REVERSE_UP_DEFAULT 1
+#define REVERSE_DOWN_DEFAULT 1
+#define REVERSE_LEFT_DEFAULT 1
+#define REVERSE_RIGHT_DEFAULT 1
+
+#define BUTTON_LAYOUT BUTTON_LAYOUT_STICKLESS
+#define BUTTON_LAYOUT_RIGHT BUTTON_LAYOUT_STICKLESSB
+#define SPLASH_MODE SPLASH_MODE_STATIC
+#define SPLASH_DURATION 0
+
+#define FOCUS_MODE_ENABLED 1
+#define FOCUS_MODE_BUTTON_MASK GAMEPAD_MASK_S1 | GAMEPAD_MASK_S2 | GAMEPAD_MASK_A1 | GAMEPAD_MASK_A2 | GAMEPAD_MASK_L3 | GAMEPAD_MASK_R3
+#define FOCUS_MODE_PIN 21
+#define FOCUS_MODE_BUTTON_LOCK_ENABLED 1
 
 #endif

@@ -9,11 +9,11 @@
 //       SHOULD ONLY CONSIST OF PREPROCESSOR DIRECTIVES
 // -----------------------------------------------------
 
-#ifndef _BOARDS_OPENCORE0_H
-#define _BOARDS_OPENCORE0_H
+#ifndef _BOARDS_CROSSCUT_H
+#define _BOARDS_CROSSCUT_H
 
 // For board detection
-#define OPENCORE0WASD
+#define CROSSCUT
 
 // For crappy crystal
 #ifndef PICO_XOSC_STARTUP_DELAY_MULTIPLIER
