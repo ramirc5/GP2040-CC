@@ -71,13 +71,14 @@ const Navigation = () => {
 						{t('Navigation:settings-label')}
 					</Nav.Link>
 					<NavDropdown title={t('Navigation:config-label')}>
-						<NavDropdown.Item
+						<NavDropdown.Item	
 							as={NavLink}
 							eventKey={eventKey++}
 							to="/pin-mapping"
 						>
 							{t('Navigation:pin-mapping-label')}
 						</NavDropdown.Item>
+						{/*
 						<NavDropdown.Item
 							as={NavLink}
 							eventKey={eventKey++}
@@ -115,6 +116,8 @@ const Navigation = () => {
 						<NavDropdown.Item as={NavLink} eventKey={eventKey++} to="/backup">
 							{t('Navigation:backup-label')}
 						</NavDropdown.Item>
+						*/}
+
 						<NavDropdown.Item
 							as={NavLink}
 							eventKey={eventKey++}

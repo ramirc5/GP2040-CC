@@ -38,8 +38,12 @@ const App = () => {
 						<Route path="/led-config" element={<LEDConfigPage />} />
 						<Route path="/custom-theme" element={<CustomThemePage />} />
 						<Route path="/display-config" element={<DisplayConfigPage />} />
-						<Route path="/add-ons" element={<AddonsConfigPage />} />
-						<Route path="/backup" element={<BackupPage />} />
+						{
+						//<Route path="/add-ons" element={<AddonsConfigPage />} />
+						}
+						{
+						//<Route path="/backup" element={<BackupPage />} />
+						}
 						<Route path="/playground" element={<PlaygroundPage />} />
 						<Route path="/macro" element={<InputMacroAddonPage />} />
 					</Routes>

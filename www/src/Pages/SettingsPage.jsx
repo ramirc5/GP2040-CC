@@ -1125,25 +1125,29 @@ export default function SettingsPage() {
 				console.log('errors', errors) || (
 					<div>
 						<Form noValidate onSubmit={handleSubmit}>
-							<Tab.Container defaultActiveKey="inputmode">
+							<Tab.Container defaultActiveKey="gamepad">
 								<Row>
 									<Col md={3}>
 										<Nav variant="pills" className="flex-column">
+											{ /*
 											<Nav.Item>
 												<Nav.Link eventKey="inputmode">
 													{t('SettingsPage:settings-header-text')}
 												</Nav.Link>
-											</Nav.Item>
+											</Nav.Item>*/}
+
 											<Nav.Item>
 												<Nav.Link eventKey="gamepad">
 													{t('SettingsPage:gamepad-settings-header-text')}
 												</Nav.Link>
 											</Nav.Item>
+											{ /*
 											<Nav.Item>
 												<Nav.Link eventKey="bootmode">
 													{t('SettingsPage:boot-input-mode-label')}
 												</Nav.Link>
 											</Nav.Item>
+											*/}
 											<Nav.Item>
 												<Nav.Link eventKey="hotkey">
 													{t('SettingsPage:hotkey-settings-label')}
@@ -1153,62 +1157,6 @@ export default function SettingsPage() {
 									</Col>
 									<Col md={9}>
 										<Tab.Content>
-											<Tab.Pane eventKey="inputmode">
-												<Section title={t('SettingsPage:settings-header-text')}>
-													<Form.Group className="row mb-3">
-														<Form.Label>
-															{t('SettingsPage:current-input-mode-label')}
-														</Form.Label>
-														<Col sm={3}>
-															<Form.Select
-																name="inputMode"
-																className="form-select-sm"
-																value={values.inputMode}
-																onChange={handleChange}
-																isInvalid={errors.inputMode}
-															>
-																{translatedInputModeGroups.map((o, i) => (
-																	<optgroup
-																		label={o.label}
-																		key={`optgroup-inputMode-${i}`}
-																	>
-																		{translatedInputModes
-																			.filter(({ group }) => group == o.group)
-																			.map((o, i) => (
-																				<option
-																					key={`button-inputMode-option-${i}`}
-																					value={o.value}
-																					disabled={o.disabled}
-																				>
-																					{o.label}
-																					{o.disabled && o.reason != ''
-																						? ' (' + o.reason + ')'
-																						: ''}
-																				</option>
-																			))}
-																	</optgroup>
-																))}
-															</Form.Select>
-															<Form.Control.Feedback type="invalid">
-																{errors.inputMode}
-															</Form.Control.Feedback>
-														</Col>
-													</Form.Group>
-													{inputModeSpecifics(
-														values,
-														errors,
-														setFieldValue,
-														handleChange,
-														translatedInputModeAuthentications,
-													)}
-													<Button type="submit">
-														{t('Common:button-save-label')}
-													</Button>
-													{saveMessage ? (
-														<span className="alert">{saveMessage}</span>
-													) : null}
-												</Section>
-											</Tab.Pane>
 											<Tab.Pane eventKey="gamepad">
 												<Section
 													title={t('SettingsPage:gamepad-settings-header-text')}
@@ -1283,6 +1231,7 @@ export default function SettingsPage() {
 														</Col>
 													</Form.Group>
 													<p>{t('SettingsPage:socd-cleaning-mode-note')}</p>
+													{/*
 													<Form.Group className="row mb-3">
 														<Form.Label>
 															{t('SettingsPage:forced-setup-mode-label')}
@@ -1355,6 +1304,8 @@ export default function SettingsPage() {
 															/>
 														</Col>
 													</Form.Group>
+													*/}
+
 													<Button type="submit">
 														{t('Common:button-save-label')}
 													</Button>
