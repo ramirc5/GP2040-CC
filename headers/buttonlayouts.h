@@ -307,8 +307,8 @@
             {GP_ELEMENT_BTN_BUTTON, {82, 46, 4, 4, 1, 1, GAMEPAD_MASK_R2, GP_SHAPE_ELLIPSE}},  \
         {                                                                                      \
             GP_ELEMENT_BTN_BUTTON, { 82, 46, 4, 4, 1, 1, GAMEPAD_MASK_S1, GP_SHAPE_ELLIPSE }   \
-        }
-}
+        }                                                                                      \
+    }
 
 #define BUTTON_GROUP_ARCADE_BUTTONS                                                            \
     {                                                                                          \
