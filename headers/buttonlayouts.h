@@ -298,23 +298,17 @@
         }                                                                                      \
     }
 
-#define BUTTON_GROUP_WASD_BUTTONS                                                              \
-    {                                                                                          \
-        {GP_ELEMENT_BTN_BUTTON, {93, 27, 4, 4, 1, 1, GAMEPAD_MASK_B1, GP_SHAPE_ELLIPSE}},      \
-            {GP_ELEMENT_BTN_BUTTON, {93, 17, 4, 4, 1, 1, GAMEPAD_MASK_B3, GP_SHAPE_ELLIPSE}},  \
-            {GP_ELEMENT_BTN_BUTTON, {103, 13, 4, 4, 1, 1, GAMEPAD_MASK_B4, GP_SHAPE_ELLIPSE}}, \
-            {GP_ELEMENT_BTN_BUTTON, {113, 14, 4, 4, 1, 1, GAMEPAD_MASK_R1, GP_SHAPE_ELLIPSE}}, \
-            {GP_ELEMENT_BTN_BUTTON, {122, 19, 4, 4, 1, 1, GAMEPAD_MASK_L1, GP_SHAPE_ELLIPSE}}, \
-            {GP_ELEMENT_BTN_BUTTON, {102, 23, 4, 4, 1, 1, GAMEPAD_MASK_B2, GP_SHAPE_ELLIPSE}}, \
-            {GP_ELEMENT_BTN_BUTTON, {82, 46, 4, 4, 1, 1, GAMEPAD_MASK_R2, GP_SHAPE_ELLIPSE}},  \
-        {                                                                                      \
-            GP_ELEMENT_BTN_BUTTON, { 90, 40, 4, 4, 1, 1, GAMEPAD_MASK_L2, GP_SHAPE_ELLIPSE }   \
-        }                                                                                      \
-        {                                                                                      \
-            GP_ELEMENT_BTN_BUTTON, { 93, 27, 4, 4, 1, 1, GAMEPAD_MASK_L3, GP_SHAPE_ELLIPSE }   \
-        }                                                                                      \
-        {                                                                                      \
-            GP_ELEMENT_BTN_BUTTON, { 82, 46, 4, 4, 1, 1, GAMEPAD_MASK_S1, GP_SHAPE_ELLIPSE }   \
+#define BUTTON_GROUP_WASD_BUTTONS                                                                \
+    {                                                                                            \
+        {GP_ELEMENT_BTN_BUTTON, {93, 27, 4, 4, 1, 1, GAMEPAD_MASK_B1, GP_SHAPE_ELLIPSE}},        \
+            {GP_ELEMENT_BTN_BUTTON, {93, 17, 4, 4, 1, 1, GAMEPAD_MASK_B3, GP_SHAPE_ELLIPSE}},    \
+            {GP_ELEMENT_BTN_BUTTON, {103, 13, 4, 4, 1, 1, GAMEPAD_MASK_B4, GP_SHAPE_ELLIPSE}},   \
+            {GP_ELEMENT_BTN_BUTTON, {113, 14, 4, 4, 1, 1, GAMEPAD_MASK_R1, GP_SHAPE_ELLIPSE}},   \
+            {GP_ELEMENT_BTN_BUTTON, {122, 19, 4, 4, 1, 1, GAMEPAD_MASK_L1, GP_SHAPE_ELLIPSE}},   \
+            {GP_ELEMENT_BTN_BUTTON, {102, 23, 4, 4, 1, 1, GAMEPAD_MASK_B2, GP_SHAPE_ELLIPSE}},   \
+            {GP_ELEMENT_BTN_BUTTON, {82, 46, 4, 4, 1, 1, GAMEPAD_MASK_R2, GP_SHAPE_ELLIPSE}},  \ \
+        {                                                                                        \
+            GP_ELEMENT_BTN_BUTTON, { 82, 46, 4, 4, 1, 1, GAMEPAD_MASK_S1, GP_SHAPE_ELLIPSE }     \
         }
 }
 
