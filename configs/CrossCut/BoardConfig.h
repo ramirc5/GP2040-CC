@@ -80,6 +80,7 @@
 
 #define HOTKEY_01_AUX_MASK 0
 #define HOTKEY_01_BUTTONS_MASK 512 // L2+Start
-#define HOTKEY_01_ACTION 4         // Home
+#define HOTKEY_01_DPAD_MASK 0
+#define HOTKEY_01_ACTION 4 // Home
 
 #endif
