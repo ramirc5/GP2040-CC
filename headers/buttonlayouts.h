@@ -48,7 +48,6 @@
         {GP_ELEMENT_DIR_BUTTON, {35, 27, 4, 4, 1, 1, GAMEPAD_MASK_RIGHT, GP_SHAPE_ELLIPSE}}, \
         {GP_ELEMENT_DIR_BUTTON, {38, 52, 4, 4, 1, 1, GAMEPAD_MASK_UP, GP_SHAPE_ELLIPSE}},    \
         {GP_ELEMENT_BTN_BUTTON, {64, 27, 4, 4, 1, 1, GAMEPAD_MASK_S2, GP_SHAPE_ELLIPSE}},    \
-        {GP_ELEMENT_BTN_BUTTON, {46, 58, 4, 4, 1, 1, AUX_MASK_FUNCTION, GP_SHAPE_ELLIPSE}},  \
     }
 
 #define BUTTON_GROUP_WASD_BOX                                                                    \
