@@ -29,7 +29,7 @@
 #define GPIO_PIN_00 GpioAction::BUTTON_PRESS_S2    // S2     | Start  | Plus    | Start    | 10     | Start  |
 #define GPIO_PIN_14 GpioAction::BUTTON_PRESS_L3    // L3     | LS     | LS      | L3       | 11     | LS     |
 #define GPIO_PIN_12 GpioAction::BUTTON_PRESS_R3    // R3     | RS     | RS      | R3       | 12     | RS     |
-#define GPIO_PIN_12 GpioAction::BUTTON_PRESS_A2    // A2     | ~      | Capture | ~        | 14     | ~      |
+#define GPIO_PIN_15 GpioAction::BUTTON_PRESS_A2    // A2     | ~      | Capture | ~        | 14     | ~      |
 #define GPIO_PIN_07 GpioAction::BUTTON_PRESS_FN    // Hotkey Function                                        |
 
 // Setting GPIO pins to assigned by add-on
